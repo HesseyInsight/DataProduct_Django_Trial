@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <style>
+    text:hover {
+        stroke: black;
+    }
+<!--button {-->
+<!--   background-color: #D5D5D5;-->
+<!--   border: none;-->
+<!--   color: white;-->
+<!--   flot:left:-->
+<!--   padding: 5px;-->
+<!--}-->
+<!--input{-->
+<!--    margin : 10px 10px 10px 10px;-->
+<!--}-->
+<!--input + input{-->
+<!--   margin-left: 10px;-->
+<!--}-->
+<!--    div {-->
+<!--      margin : 10px 0px 10px 0px;-->
+<!--    }-->
+<!--    table{-->
+<!--        margin: 20px 20px 20px 20px;-->
+<!--        table-layout:fixed-->
+<!--    }-->
+  </style>
+
+    <meta charset="UTF-8">
+    <title>Patent Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/style.css' %}">
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- Load d3-cloud -->
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+
+
+    <a href="{% url 'index' %}" style="text-decoration:none; color:#6798FD;">
+        <h1 style="margin : 50px 50px 50px 50px;"> Gachon Patent Search</h1>
+    </a>
+
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

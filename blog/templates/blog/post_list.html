@@ -30,12 +30,12 @@
   </form>
 </div>
 
-{{ posts }}
+{% comment %} {{ posts }} {% endcomment %}
 
 {% comment %} {% for post in posts %}
     {{ post }}
 {% endfor %} {% endcomment %}
-{% for post in posts %}
+{% comment %} {% for post in posts %}
     {{ post }}
 {% endfor %}
 
@@ -45,7 +45,7 @@
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
-{% endfor %}
+{% endfor %} {% endcomment %}
 
 
 <script>

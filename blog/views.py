@@ -9,6 +9,8 @@ def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts':posts})
 
+
+
 def img_search(request, img_id):
     google_url = 'www.ggl.~~'
     total_url = google_url + img_id
